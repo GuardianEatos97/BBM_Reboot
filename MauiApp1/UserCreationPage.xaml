@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.UserCreationPage"
+             Title="UserCreationPage">
+    <VerticalStackLayout>
+
+        <Label Text="Blackberry ID"
+         FontSize="50"
+         FontAttributes="Bold"
+        HorizontalOptions="Center" />
+
+        <Entry Keyboard="Text"
+   Placeholder="Enter First Name(s)"
+   VerticalOptions="CenterAndExpand" />
+
+        <Entry Keyboard="Text"
+   Placeholder="Enter Last Name"
+   VerticalOptions="CenterAndExpand" />
+
+        <Entry Keyboard="Email"
+Placeholder="Enter Email Address"
+VerticalOptions="CenterAndExpand" />
+
+        <Entry Keyboard="Telephone"
+Placeholder="Enter Phone Number"
+VerticalOptions="CenterAndExpand" />
+
+        <Entry Keyboard="Text"
+Placeholder="Enter New Blackberry ID"
+VerticalOptions="CenterAndExpand" />
+
+        <Entry Keyboard="Text"
+Placeholder="Enter Password"
+VerticalOptions="CenterAndExpand" />
+
+        <Entry Keyboard="Text"
+Placeholder="Confirm Password"
+               IsPassword="True"
+VerticalOptions="CenterAndExpand" />
+
+    </VerticalStackLayout>
+</ContentPage>

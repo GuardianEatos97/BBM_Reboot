@@ -49,11 +49,11 @@
                 VerticalOptions="CenterAndExpand" />
 
             <Button
-                x:Name="IDCreationBtn"
+                x:Name="NewLogInBtn"
                 Text="Proceed"
                 TextColor="Black"
                 SemanticProperties.Hint="Click to sign into blackberry ID"
-                Clicked="OnCounterClicked"
+                Clicked="NewLogInBtn_Clicked"
                 HorizontalOptions="Fill"
                 BorderColor="Black"
                 CornerRadius="100"

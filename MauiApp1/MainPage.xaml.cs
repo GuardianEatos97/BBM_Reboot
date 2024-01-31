@@ -19,9 +19,14 @@ namespace MauiApp1
         private void OnCounterClicked(object sender, EventArgs e)
         {
             
-            Navigation.PushAsync(new UserCreationPage());
             Navigation.PushAsync(new BBMPage());
            
+        }
+
+        private void CreateIDBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new UserCreationPage());
+
         }
     }
 

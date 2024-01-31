@@ -41,7 +41,7 @@
 	<ItemGroup>
 
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\bbm_logo.svg" Color="White" BaseSize="32,32" />
+		<MauiIcon Include="Resources\AppIcon\bbm_logo.svg" Color="White" BaseSize="50,100" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\bbm_logo.svg" BaseSize="300,300" Color="Black" />
@@ -75,7 +75,7 @@
 	  <MauiXaml Update="BBMPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="UserCreation.xaml">
+	  <MauiXaml Update="UserCreationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

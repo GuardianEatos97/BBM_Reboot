@@ -58,39 +58,46 @@
 
             <Entry Keyboard="Text"
                Placeholder="Enter Blackberry ID"
-               VerticalOptions="CenterAndExpand"
-               Opacity="100"
-               TextColor="Black"/>
+               VerticalOptions="CenterAndExpand" />
 
             <Entry Keyboard="Text"
                Placeholder="Enter password"
                IsPassword="True"
                VerticalOptions="CenterAndExpand" />
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="500">
-                <Button
-                 x:Name="SignInBtn"
-                 Text="Sign In" 
-                 SemanticProperties.Hint="Click to log into blackberry ID"
-                 Clicked="OnCounterClicked"
-                 HorizontalOptions="Start"
-                 BorderColor="Black"
-                 BorderWidth="1"
-                 FontSize="Large"
-                 TextColor="Black"/>
-                <Button
-                 x:Name="CreateIDBtn"
-                 Text="Create ID"
-                 SemanticProperties.Hint="Click to creat a new Blackberry ID"
-                 Clicked="OnCounterClicked"
-                 HorizontalOptions="End"
-                 BorderColor="Black"
-                 BorderWidth="1"
-                 FontSize="Large"
-                 TextColor="Black"/>
-            </StackLayout>
-            
+            <StackLayout 
+                Spacing="500"
+                Orientation="Horizontal"
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand"
+                >
 
+                <Button
+                x:Name="SignInBtn"
+                 Text="Sign In"
+                 TextColor="Black"
+                 SemanticProperties.Hint="Click to sign into blackberry ID"
+                  Clicked="OnCounterClicked"
+                  HorizontalOptions="Fill"
+                  BorderColor="Black"
+                  CornerRadius="100"
+                  BorderWidth="1"
+                  Background="Transparent"/>
+
+                <Button
+                x:Name="CreateIDBtn"
+                Text="Create ID" 
+                TextColor="Black"
+                SemanticProperties.Hint="Click to create a blackberry ID"
+                Clicked="OnCounterClicked"
+                CornerRadius="100"
+                HorizontalOptions="Fill"
+                BorderColor="Black"
+                BorderWidth="1"
+                Background="Transparent"/>
+            
+                
+            </StackLayout>
         </VerticalStackLayout>
     </ScrollView>
 

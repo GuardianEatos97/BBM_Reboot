@@ -4,7 +4,7 @@ namespace MauiApp1
 {
     public partial class MainPage : ContentPage
     {
-        // Launcher.OpenAsync is provided by Essentials.
+        
         public ICommand TapCommand => new Command<string>(async (url) => await Launcher.OpenAsync(url));
         int count = 0;
 
@@ -12,6 +12,7 @@ namespace MauiApp1
         {
             InitializeComponent();
             BindingContext = this;
+            
         }
 
         private void OnCounterClicked(object sender, EventArgs e)
@@ -19,11 +20,10 @@ namespace MauiApp1
             count++;
 
             if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+               /* BBMPage = new NavigationPage(new BBMPage());
+            await Navigation.PushAsync(new BBMPage());*/
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            SemanticScreenReader.Announce(SignInBtn.Text);
         }
     }
 

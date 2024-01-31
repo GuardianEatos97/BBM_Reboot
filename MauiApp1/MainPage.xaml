@@ -58,22 +58,39 @@
 
             <Entry Keyboard="Text"
                Placeholder="Enter Blackberry ID"
-               VerticalOptions="CenterAndExpand" />
+               VerticalOptions="CenterAndExpand"
+               Opacity="100"
+               TextColor="Black"/>
 
             <Entry Keyboard="Text"
                Placeholder="Enter password"
                IsPassword="True"
                VerticalOptions="CenterAndExpand" />
 
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Create ID" 
-                SemanticProperties.Hint="Click to create a blackberry ID"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill"
-                Background="Transparent"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="500">
+                <Button
+                 x:Name="SignInBtn"
+                 Text="Sign In" 
+                 SemanticProperties.Hint="Click to log into blackberry ID"
+                 Clicked="OnCounterClicked"
+                 HorizontalOptions="Start"
+                 BorderColor="Black"
+                 BorderWidth="1"
+                 FontSize="Large"
+                 TextColor="Black"/>
+                <Button
+                 x:Name="CreateIDBtn"
+                 Text="Create ID"
+                 SemanticProperties.Hint="Click to creat a new Blackberry ID"
+                 Clicked="OnCounterClicked"
+                 HorizontalOptions="End"
+                 BorderColor="Black"
+                 BorderWidth="1"
+                 FontSize="Large"
+                 TextColor="Black"/>
+            </StackLayout>
             
+
         </VerticalStackLayout>
     </ScrollView>
 

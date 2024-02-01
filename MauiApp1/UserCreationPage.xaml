@@ -2,63 +2,69 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.UserCreationPage"         
-             Title="ID Creation">
-             
+             >
+
     
     <ScrollView>
         <VerticalStackLayout>
-            
             <Label 
                 Text="Create A New Blackberry ID"
                 FontSize="50"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
-                Margin="50"
+              Margin="50"
                 />
 
-            <Entry Keyboard="Text"
+            <Entry Margin="10,20,10,20" Keyboard="Text"
             Placeholder="Enter First Name(s)"
             VerticalOptions="CenterAndExpand"
                    
               />
 
-            <Entry Keyboard="Text"
+            <Entry  Margin="10,20,10,20" Keyboard="Text"
              Placeholder="Enter Last Name"
              VerticalOptions="CenterAndExpand" />
 
-            <Entry Keyboard="Email"
+            <Entry  Margin="10,20,10,20" Keyboard="Email"
             Placeholder="Enter Email Address"
             VerticalOptions="CenterAndExpand" />
 
-            <Entry Keyboard="Telephone"
+            <Entry  Margin="10,20,10,20" Keyboard="Telephone"
             Placeholder="Enter Phone Number"
             VerticalOptions="CenterAndExpand" />
 
-            <Entry Keyboard="Text"
+            <Entry  Margin="10,20,10,20" Keyboard="Text"
             Placeholder="Enter New Blackberry ID"
             VerticalOptions="CenterAndExpand" />
 
-            <Entry Keyboard="Text"
+            <Entry  Margin="10,20,10,20" Keyboard="Text"
                 Placeholder="Enter Password"
                IsPassword="True"
                 VerticalOptions="CenterAndExpand" />
 
-            <Entry Keyboard="Text"
+            <Entry  Margin="10,20,10,20" Keyboard="Text"
                 Placeholder="Confirm Password"
                IsPassword="True"
                 VerticalOptions="CenterAndExpand" />
 
-            <Button
+            <Button  Margin="10,20,10,20"
                 x:Name="NewLogInBtn"
                 Text="Proceed"
                 TextColor="Black"
                 SemanticProperties.Hint="Click to sign into blackberry ID"
                 Clicked="NewLogInBtn_Clicked"
-                HorizontalOptions="Fill"
+                HorizontalOptions="Start"
                 BorderColor="Black"
                 CornerRadius="100"
                 BorderWidth="1"
                 Background="Transparent"/>
+                
+            <Image
+    Source="bbm_dots.png"
+    HeightRequest="185"
+    Aspect="AspectFit"
+    SemanticProperties.Description="bbm welcome logo" />
+
 
         </VerticalStackLayout>
     </ScrollView>

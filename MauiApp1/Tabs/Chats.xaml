@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Classes="clr-namespace:MauiApp1.Classes"
+             x:Class="MauiApp1.Tabs.Chats"
+             Title="BBM Chat List">
+    <ScrollView>
+        <Grid RowDefinitions="*, Auto">
+            <CollectionView Grid.Row="0"
+                ItemsSource="{Binding Chats_ }">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="Classes:ChatClass">
+                        <Grid ColumnDefinitions="Auto, *"
+                       Padding="10, 0, 0, 0">
+                            <Frame CornerRadius="50"
+                           BorderColor="Blue"
+                           Padding="0"
+                           WidthRequest="50"
+                           HeightRequest="50">
+                                <Image  Grid.Column="0"
+                            Source="{Binding ProfilePicture}"
+                            Aspect="AspectFill"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            />
+                            </Frame>
+
+                            <Grid Grid.Column="1"
+                     RowDefinitions="Auto, Auto"
+                  Padding="10">
+                                <Grid ColumnDefinitions="*, Auto">
+                                    <VerticalStackLayout Spacing="5">
+                                        <Label Text="{Binding ProfileName}"
+                                        FontSize="16"
+                                        FontAttributes="Bold"/>
+                                        <Label Text="{Binding LastMessage}" />
+                                    </VerticalStackLayout>
+
+                                    <VerticalStackLayout Grid.Column="1" Spacing="5">
+                                        <Label Text="{Binding LastMessageAt}"/>
+                                        
+                                    </VerticalStackLayout>
+
+                                </Grid>
+
+                            </Grid>
+
+                        </Grid>
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ScrollView>
+</ContentPage>

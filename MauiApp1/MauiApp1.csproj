@@ -60,7 +60,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\adam.jpg" />
+	  <None Remove="Resources\Images\aria.jpg" />
 	  <None Remove="Resources\Images\bbm_dots.png" />
+	  <None Remove="Resources\Images\call_icon.png" />
+	  <None Remove="Resources\Images\caution_logo.png" />
+	  <None Remove="Resources\Images\dean.jpeg" />
+	  <None Remove="Resources\Images\jasmin.jpeg" />
+	  <None Remove="Resources\Images\neo.jpeg" />
 	</ItemGroup>
 
 	
@@ -73,6 +80,15 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="BBMPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\CallLog.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\Chats.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\StatusUpdates.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="UserCreationPage.xaml">

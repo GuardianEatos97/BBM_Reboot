@@ -11,8 +11,6 @@ namespace MauiApp1
         public MainPage()
         {
             InitializeComponent();
-            Navigation.PushAsync(new UserCreationPage());
-            Navigation.PushAsync(new BBMPage());
             BindingContext = this;
         }
 

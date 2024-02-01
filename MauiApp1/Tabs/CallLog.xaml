@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Tabs.CallLog"
+             Title="Call Log">
+ <Frame
+        BorderColor="Transparent"
+            Padding="20"
+            Margin="50">
+        
+    <HorizontalStackLayout>
+        
+           <Image
+            Source="call_icon.png"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            HeightRequest="150"
+            />
+           <Label 
+            Text="Click to start a call"
+            Margin="50,50"
+            FontSize="30"
+            VerticalOptions="StartAndExpand" 
+            HorizontalOptions="Center" />
+
+           <Label
+            Text="Recents (0)"
+            Margin="50"
+            FontSize="20"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center"
+            />
+    </HorizontalStackLayout>
+ </Frame>
+
+</ContentPage>

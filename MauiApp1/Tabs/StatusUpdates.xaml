@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Tabs.StatusUpdates"
+             Title="Status Updates">
+    <VerticalStackLayout>
+        <Image
+            Source="caution_logo.png"
+            HeightRequest="200"
+            Aspect="AspectFit"
+            Margin="50"/>
+            
+        <Label 
+            Text="Please Update BBM to Version 3.2 To View Status Updates"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label
+    HorizontalOptions="Center">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="" />
+                    <Span Text="Update To Lastest Version"
+            TextColor="Red"
+            TextDecorations="Underline">
+
+
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                              CommandParameter="https://play.google.com/store/" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span Text="" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </VerticalStackLayout>
+</ContentPage>

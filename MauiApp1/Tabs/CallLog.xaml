@@ -2,35 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Tabs.CallLog"
-             Title="Call Log">
- <Frame
-        BorderColor="Transparent"
-            Padding="20"
-            Margin="50">
-        
-    <HorizontalStackLayout>
-        
-           <Image
+             Title="Call Log"
+             >
+    <ScrollView>
+    <VerticalStackLayout>
+
+        <ImageButton
             Source="call_icon.png"
-            HorizontalOptions="Start"
-            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Aspect="AspectFit"
             HeightRequest="150"
-            />
-           <Label 
+            Margin="0,50"
+            Clicked="ImageButton_Clicked"/>
+
+        <Label 
             Text="Click to start a call"
-            Margin="50,50"
             FontSize="30"
-            VerticalOptions="StartAndExpand" 
+            VerticalOptions="CenterAndExpand" 
             HorizontalOptions="Center" />
 
-           <Label
-            Text="Recents (0)"
+        <Label
+            Text="Recents Calls (0)"
             Margin="50"
             FontSize="20"
-            VerticalOptions="EndAndExpand"
-            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Start"
+            TextDecorations="Underline"
             />
-    </HorizontalStackLayout>
- </Frame>
-
+        <Label
+            Text="No Call Data To Be Displayed :("
+            Margin="50,0,0,0"
+            FontSize="20"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Start"
+            />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

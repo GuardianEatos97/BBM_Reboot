@@ -88,6 +88,9 @@
 	  <MauiXaml Update="Tabs\Chats.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Tabs\Contacts.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Tabs\StatusUpdates.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
